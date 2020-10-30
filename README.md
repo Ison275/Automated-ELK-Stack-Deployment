@@ -72,7 +72,7 @@ The ELK VM uses Docker to download and manage an ELK container that exposes an E
   - 9200:9200
   - 5044:5044
 
-[Install_elk.yml] (https://github.com/Ison275/Automated-ELK-Stack-Deployment/blob/main/Automated%20ELK%20Stack%20Deployment/Resources/install_elk.yml)
+[install_elk.yml](https://github.com/Ison275/Automated-ELK-Stack-Deployment/blob/main/Automated%20ELK%20Stack%20Deployment/Resources/install_elk.yml) 
 
 ### Target Machines & Beats
 
@@ -96,8 +96,8 @@ These Beats allow us to collect the following information from each machine:
 
 The playbooks below install Filebeat and Metricbeat on the target hosts. 
 
-(Resources/filebeat_playbook.yml)
-(Resources/metricbeat_playbook.yml)
+[filebeat_playbook.yml](https://github.com/Ison275/Automated-ELK-Stack-Deployment/blob/main/Automated%20ELK%20Stack%20Deployment/Resources/filebeat_playbook.yml)
+[metricbeat_playbook.yml](https://github.com/Ison275/Automated-ELK-Stack-Deployment/blob/main/Automated%20ELK%20Stack%20Deployment/Resources/metricbeat_playbook.yml)
 
 
 ### Using the Playbooks
@@ -173,14 +173,14 @@ $ ansible-playbook install_metricbeat.yml webservers
 
 The following screenshots display the results of successfully running the playbooks:
 
-(Images/ELK_Screen_Shot)
-(Images/Beats_Screen_Shot)
+![ELK_Screen_Shot](https://github.com/Ison275/Automated-ELK-Stack-Deployment/blob/main/Automated%20ELK%20Stack%20Deployment/Images/ELK_Screen_Shot)
+![Beats_Screen_Shot](https://github.com/Ison275/Automated-ELK-Stack-Deployment/blob/main/Automated%20ELK%20Stack%20Deployment/Images/Beats_Screen_Shot)
 
 To verify success, wait five minutes to give ELK time to start up. 
 
 Verify that you can access your server by opening a web browser and navigating to http://104.45.218.23:5601. (dynamic public ip of ELK server will vary) You should see the following Kibana homepage: 
 
-(Images/Kibana_Home.png)
+![Kibana_Home.png](https://github.com/Ison275/Automated-ELK-Stack-Deployment/blob/main/Automated%20ELK%20Stack%20Deployment/Images/Kibana_Home.png)
 
 Kibana is a free and open user interface that lets us visualize our Elasticsearch data and navigate the Elastic Stack. From here we can easily monitor the vulnerable VMs for changes to the file systems of the VMs on the network, as well as watch system metrics, such as: CPU usage; attempted SSH logins; sudo escalation failures; etc.
 
