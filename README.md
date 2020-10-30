@@ -96,8 +96,8 @@ These Beats allow us to collect the following information from each machine:
 
 The playbooks below install Filebeat and Metricbeat on the target hosts. 
 
-[filebeat_playbook.yml](https://github.com/Ison275/Automated-ELK-Stack-Deployment/blob/main/Automated%20ELK%20Stack%20Deployment/Resources/filebeat_playbook.yml)
-[metricbeat_playbook.yml](https://github.com/Ison275/Automated-ELK-Stack-Deployment/blob/main/Automated%20ELK%20Stack%20Deployment/Resources/metricbeat_playbook.yml)
+[install_filebeat.yml](https://github.com/Ison275/Automated-ELK-Stack-Deployment/blob/main/Automated%20ELK%20Stack%20Deployment/Resources/install_filebeat.yml)
+[install_metricbeat.yml](https://github.com/Ison275/Automated-ELK-Stack-Deployment/blob/main/Automated%20ELK%20Stack%20Deployment/Resources/install_metricbeat.yml)
 
 
 ### Using the Playbooks
