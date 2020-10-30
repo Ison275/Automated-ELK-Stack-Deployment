@@ -72,8 +72,7 @@ The ELK VM uses Docker to download and manage an ELK container that exposes an E
   - 9200:9200
   - 5044:5044
 
-(Resources/install_elk.yml) 
-
+[Install_elk.yml] (https://github.com/Ison275/Automated-ELK-Stack-Deployment/blob/main/Automated%20ELK%20Stack%20Deployment/Resources/install_elk.yml)
 
 ### Target Machines & Beats
 
