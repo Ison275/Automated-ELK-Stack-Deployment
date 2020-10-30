@@ -117,37 +117,60 @@ $ sudo docker start goofy_allen
 
 $ sudo docker attach goofy_allen
 
+
 The easiest way to copy the playbooks is to use Git:
 
+
 $ cd /etc/ansible
+
 $ mkdir files
+
 # Clone Repository + IaC Files
+
 $ git clone https://github.com/Ison275/Automated-ELK-Stack-Deployment.git
+
 # Move Playbooks and hosts file Into `/etc/ansible`
+
 $ cp Automated-ELK-Stack-Deployment/resources/* .
+
 $ cp Automated-ELK-Stack-Deployment/resources/* ./files
+
 
 This copies the playbook files to the correct place.
 
 Next, you must create a hosts file to specify which VMs to run each playbook on. Run the commands below:
 
 $ cd /etc/ansible
+
 $ cat > hosts <<EOF
+
 [webservers]
+
 10.0.0.5
+
 10.0.0.6
+
 10.0.0.7
 
+
 [elk]
+
 10.1.0.4
+
 EOF
+
 
 After this, run the commands below to run the playbooks:
 
+
 $ cd /etc/ansible/files
+
 $ ansible-playbook install_elk.yml elk
+
 $ ansible-playbook install_filebeat.yml webservers
+
 $ ansible-playbook install_metricbeat.yml webservers
+
 
 The following screenshots display the results of successfully running the playbooks:
 
