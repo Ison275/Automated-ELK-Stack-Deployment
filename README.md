@@ -140,9 +140,11 @@ This copies the playbook files to the correct place.
 
 Next, you must create a hosts file to specify which VMs to run each playbook on. Run the commands below:
 
+
 $ cd /etc/ansible
 
 $ cat > hosts <<EOF
+
 
 [webservers]
 
@@ -158,6 +160,7 @@ $ cat > hosts <<EOF
 10.1.0.4
 
 EOF
+
 
 
 After this, run the commands below to run the playbooks:
@@ -181,7 +184,7 @@ To verify success, wait five minutes to give ELK time to start up.
 
 Verify that you can access your server by opening a web browser and navigating to http://104.45.218.23:5601. (dynamic public ip of ELK server will vary) You should see the following Kibana homepage: 
 
-[Kibana_Screen_Shot.png](https://github.com/Ison275/Automated-ELK-Stack-Deployment/blob/main/Automated%20ELK%20Stack%20Deployment/Images/Kibana_Screen_Shot.png)
+![Kibana_Screen_Shot.png](https://github.com/Ison275/Automated-ELK-Stack-Deployment/blob/main/Automated%20ELK%20Stack%20Deployment/Images/Kibana_Screen_Shot.png)
 
 Kibana is a free and open user interface that lets us visualize our Elasticsearch data and navigate the Elastic Stack. From here we can easily monitor the vulnerable VMs for changes to the file systems of the VMs on the network, as well as watch system metrics, such as: CPU usage; attempted SSH logins; sudo escalation failures; etc.
 
