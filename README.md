@@ -1,1 +1,0 @@
-# Automated-ELK-Stack-Deployment
