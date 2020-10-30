@@ -97,6 +97,7 @@ These Beats allow us to collect the following information from each machine:
 The playbooks below install Filebeat and Metricbeat on the target hosts. 
 
 [install_filebeat.yml](https://github.com/Ison275/Automated-ELK-Stack-Deployment/blob/main/Automated%20ELK%20Stack%20Deployment/Resources/install_filebeat.yml)
+
 [install_metricbeat.yml](https://github.com/Ison275/Automated-ELK-Stack-Deployment/blob/main/Automated%20ELK%20Stack%20Deployment/Resources/install_metricbeat.yml)
 
 
@@ -173,8 +174,9 @@ $ ansible-playbook install_metricbeat.yml webservers
 
 The following screenshots display the results of successfully running the playbooks:
 
-![ELK_Screen_Shot](https://github.com/Ison275/Automated-ELK-Stack-Deployment/blob/main/Automated%20ELK%20Stack%20Deployment/Images/ELK_Screen_Shot)
-![Beats_Screen_Shot](https://github.com/Ison275/Automated-ELK-Stack-Deployment/blob/main/Automated%20ELK%20Stack%20Deployment/Images/Beats_Screen_Shot)
+![ELK_Screen_Shot](https://github.com/Ison275/Automated-ELK-Stack-Deployment/blob/main/Automated%20ELK%20Stack%20Deployment/Images/ELK_Screen_Shot.png)
+
+![Beats_Screen_Shot](https://github.com/Ison275/Automated-ELK-Stack-Deployment/blob/main/Automated%20ELK%20Stack%20Deployment/Images/Beats_Screen_Shot.png)
 
 To verify success, wait five minutes to give ELK time to start up. 
 
