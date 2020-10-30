@@ -108,9 +108,13 @@ In order to use the playbooks, you will need to have an Ansible control node alr
 First we must SSH into the Jump Box and locate, start, and attach to our Ansible container.
 
 $ ssh RedAdmin@23.96.55.16
+
 $ sudo docker ps
+
 $ sudo docker list -a
+
 $ sudo docker start goofy_allen
+
 $ sudo docker attach goofy_allen
 
 The easiest way to copy the playbooks is to use Git:
