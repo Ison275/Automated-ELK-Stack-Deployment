@@ -175,7 +175,7 @@ $ ansible-playbook install_filebeat.yml webservers
 $ ansible-playbook install_metricbeat.yml webservers
 
 
-The following screenshots display the results of successfully running the Ansible playbook:
+The following screenshot displays the results of successfully running the Ansible playbook:
 
 ![ELK_Screen_Shot](https://github.com/Ison275/Automated-ELK-Stack-Deployment/blob/main/Automated%20ELK%20Stack%20Deployment/Images/ELK_Screen_Shot.png)
 
